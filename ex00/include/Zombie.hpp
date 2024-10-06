@@ -6,7 +6,7 @@
 /*   By: ribana-b <ribana-b@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 14:57:28 by ribana-b          #+#    #+# Malaga      */
-/*   Updated: 2024/09/26 11:37:37 by ribana-b         ###   ########.com      */
+/*   Updated: 2024/10/06 13:24:02 by ribana-b         ###   ########.com      */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,12 +30,12 @@ class Zombie
 		void	announce(void);
 		void	set_name(std::string name);
 		Zombie();
-		Zombie(std::string);
+		Zombie(std::string name);
 		~Zombie();
+
 	private:
 		std::string	_name;
 };
-
 
 /* @------------------------------------------------------------------------@ */
 /* |                           Function Section                             | */

@@ -6,7 +6,7 @@
 /*   By: ribana-b <ribana-b@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 14:54:41 by ribana-b          #+#    #+# Malaga      */
-/*   Updated: 2024/09/26 11:38:32 by ribana-b         ###   ########.com      */
+/*   Updated: 2024/10/06 13:27:29 by ribana-b         ###   ########.com      */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,6 @@ Zombie::~Zombie()
 
 Zombie::Zombie() {}
 
-Zombie::Zombie(std::string name)
+Zombie::Zombie(std::string name) : _name(name)
 {
-	_name = name;
 }

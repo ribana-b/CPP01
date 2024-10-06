@@ -6,7 +6,7 @@
 /*   By: ribana-b <ribana-b@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 13:30:26 by ribana-b          #+#    #+# Malaga      */
-/*   Updated: 2024/09/27 12:22:20 by ribana-b         ###   ########.com      */
+/*   Updated: 2024/10/06 14:00:42 by ribana-b         ###   ########.com      */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,9 @@ class HumanA
 	public:
 		HumanA(std::string name, Weapon &weapon);
 		void	attack();
+
 	private:
-		Weapon		*weapon;
+		Weapon		&weapon;
 		std::string	name;
 };
 

@@ -6,7 +6,7 @@
 /*   By: ribana-b <ribana-b@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 13:30:26 by ribana-b          #+#    #+# Malaga      */
-/*   Updated: 2024/09/27 12:10:23 by ribana-b         ###   ########.com      */
+/*   Updated: 2024/10/06 13:28:49 by ribana-b         ###   ########.com      */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ class HumanB
 		HumanB(std::string name);
 		void	attack();
 		void	setWeapon(Weapon &weapon);
+
 	private:
 		Weapon		*weapon;
 		std::string	name;
