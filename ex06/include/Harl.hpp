@@ -6,7 +6,7 @@
 /*   By: ribana-b <ribana-b@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/28 16:41:29 by ribana-b          #+#    #+# Malaga      */
-/*   Updated: 2024/09/28 17:48:33 by ribana-b         ###   ########.com      */
+/*   Updated: 2024/10/06 15:55:44 by ribana-b         ###   ########.com      */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,13 @@ class Harl
 		void	complain(std::string level);
 
 	private:
+		enum
+		{
+			HARL_DEBUG,
+			HARL_INFO,
+			HARL_WARNING,
+			HARL_ERROR,
+		};
 		static void	debug(void);
 		static void	info(void);
 		static void	warning(void);

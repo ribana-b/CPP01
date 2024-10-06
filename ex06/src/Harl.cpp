@@ -6,7 +6,7 @@
 /*   By: ribana-b <ribana-b@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/28 16:40:50 by ribana-b          #+#    #+# Malaga      */
-/*   Updated: 2024/09/28 18:26:22 by ribana-b         ###   ########.com      */
+/*   Updated: 2024/10/06 15:59:35 by ribana-b         ###   ########.com      */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,14 +27,20 @@ void	Harl::complain(std::string level)
 		if (level.compare(levels[i]) == 0)
 			break ;
 	}
-	if (i == length)
+	switch (i)
 	{
-		std::cout << "SEGMENTATION HARL: idk what's that level" << std::endl;
-		return ;
-	}
-	for (; i < length; ++i)
-	{
-		complain_level[i]();
+		case HARL_DEBUG:
+			complain_level[HARL_DEBUG]();
+		case HARL_INFO:
+			complain_level[HARL_INFO]();
+		case HARL_WARNING:
+			complain_level[HARL_WARNING]();
+		case HARL_ERROR:
+			complain_level[HARL_ERROR]();
+			break ;
+		default:
+			std::cout << "SEGMENTATION HARL: idk what's that level" << std::endl;
+			break ;
 	}
 }
 
